@@ -10,14 +10,14 @@
     "license": "MIT",
     "authors": [
       {
-        "name": "Michael Vollstedt"
+        "name": "Michael Vollstedt",
+        "email": "info@smart-yourself.de"
       }
     ],
-    "keywords": [
-      "BACnet",
-      "Building",
-      "Automation"
-    ]
+    "keywords": ["BACnet", "Building", "Automation"],
+    "adminUI": {
+      "config": "html"
+    }
   },
   "native": {
     "devices": []
@@ -27,5 +27,6 @@
     "jsonConfig": true,
     "supportCustoms": false
   },
-  "objects": []
+  "objects": [],
+  "plugins": {}
 }
