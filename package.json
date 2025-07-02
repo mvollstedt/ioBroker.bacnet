@@ -3,12 +3,13 @@
   "version": "0.0.1",
   "description": "BACnet Adapter for ioBroker with classic Admin UI",
   "main": "main.js",
-  "scripts": {
-    "start": "node main.js"
-  },
+  "authors": [
+    {
+      "name": "Michael Vollstedt"
+    }
+  ],
+  "license": "MIT",
   "dependencies": {
     "@iobroker/adapter-core": "^4.0.0"
-  },
-  "author": "Michael Vollstedt",
-  "license": "MIT"
+  }
 }
