@@ -1,1 +1,32 @@
-{"type": "tab", "items": [{"type": "panel", "title": "BACnet Devices", "items": [{"type": "table", "columns": [{"name": "name", "title": "Name", "width": "30%"}, {"name": "address", "title": "Address", "width": "30%"}, {"name": "objectType", "title": "Object Type", "width": "20%"}, {"name": "objectInstance", "title": "Instance", "width": "20%"}], "name": "devices", "title": "Manuelle Geräte"}]}]}
+{
+  "native": {
+    "devices": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "default": "Ger\u00e4t 1"
+          },
+          "address": {
+            "type": "string",
+            "default": "192.168.1.100"
+          },
+          "objectType": {
+            "type": "number",
+            "default": 0
+          },
+          "instance": {
+            "type": "number",
+            "default": 0
+          },
+          "propertyId": {
+            "type": "number",
+            "default": 85
+          }
+        }
+      }
+    }
+  }
+}
