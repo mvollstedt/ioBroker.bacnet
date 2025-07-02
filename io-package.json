@@ -7,16 +7,17 @@
     "platform": "Javascript/Node.js",
     "mode": "daemon",
     "icon": "bacnet.png",
+    "adminUI": {
+      "config": "html"
+    },
     "keywords": [
       "BACnet",
       "Automation"
-    ],
-    "adminUI": {
-      "config": "html"
-    }
+    ]
   },
   "admin": {
-    "type": "html"
+    "type": "html",
+    "legacy": true
   },
   "native": {
     "devices": []
