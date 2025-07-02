@@ -1,0 +1,19 @@
+{
+  "name": "iobroker.bacnet",
+  "version": "0.0.1",
+  "description": "BACnet Adapter for ioBroker with classic Admin UI",
+  "main": "main.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "echo \"No tests\""
+  },
+  "keywords": [
+    "ioBroker",
+    "BACnet"
+  ],
+  "author": "Michael Vollstedt",
+  "license": "MIT",
+  "dependencies": {
+    "@iobroker/adapter-core": "^4.0.0"
+  }
+}

@@ -1,23 +1,14 @@
-
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <title>BACnet Admin</title>
+<head><meta charset="utf-8"><title>BACnet Admin</title>
+<style>.table-values{width:100%;border-collapse:collapse;} .table-values th, .table-values td{border:1px solid #ccc;padding:4px;} .btn{cursor:pointer;color:blue;text-decoration:underline;}</style>
 </head>
 <body>
-    <div class="m adapter-container">
-        <h3>Geräte</h3>
-        <table id="devices" class="table-values">
-            <thead>
-                <tr>
-                    <th data-name="name" style="width: 30%">Name</th>
-                    <th data-name="address" style="width: 30%">Adresse</th>
-                    <th data-buttons="delete" style="width: 10%"></th>
-                </tr>
-            </thead>
-        </table>
-    </div>
-    <script type="text/javascript" src="tab.js"></script>
+<h3>BACnet Devices</h3>
+<button id="add">+ Add Device</button>
+<table id="devices" class="table-values"><thead><tr>
+<th>Name</th><th>Address</th><th>Object Type</th><th>Instance</th><th>Property ID</th><th>Action</th>
+</tr></thead><tbody></tbody></table>
+<script src="tab.js"></script>
 </body>
 </html>
