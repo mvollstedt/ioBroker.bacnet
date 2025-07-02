@@ -6,29 +6,32 @@
   <style>
     .table-values { width:100%; border-collapse:collapse; }
     .table-values th, .table-values td { border:1px solid #ccc; padding:4px; }
-    .btn { cursor:pointer; color: blue; text-decoration: underline; }
+    .btn { cursor:pointer; color:blue; text-decoration:underline; }
   </style>
 </head>
 <body>
-  <h3>Manuelle BACnet-Geräte</h3>
-  <button id="add">+ Gerät hinzufügen</button>
-  <table id="devices" class="table-values">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Adresse</th>
-        <th>Objekt-Typ</th>
-        <th>Instanz</th>
-        <th>Property-ID</th>
-        <th>Aktion</th>
-      </tr>
-    </thead>
-    <tbody></tbody>
-  </table>
+  <!-- WICHTIG: der Container mit Klasse adapter-container -->
+  <div class="m adapter-container">
+    <h3>Manuelle BACnet-Geräte</h3>
+    <button id="add">+ Gerät hinzufügen</button>
+    <table id="devices" class="table-values">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Adresse</th>
+          <th>Objekt-Typ</th>
+          <th>Instanz</th>
+          <th>Property-ID</th>
+          <th>Aktion</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
 
-  <!-- ioBroker-Core-Adapter-UI-Bibliothek: stellt load/save/setChanged bereit -->
+  <!-- ZUERST ioBroker-Core adapter.js -->
   <script type="text/javascript" src="../../lib/js/adapter.js"></script>
-  <!-- Euer Script für Tabellen-Werte -->
+  <!-- DANN Dein Tabellen-Script -->
   <script type="text/javascript" src="tab.js"></script>
 </body>
 </html>
