@@ -15,30 +15,6 @@
             "name": "deviceId",
             "label": "Device ID",
             "default": 1234
-          },
-          {
-            "type": "number",
-            "name": "objectType",
-            "label": "Object Type",
-            "default": 0
-          },
-          {
-            "type": "number",
-            "name": "instance",
-            "label": "Instance",
-            "default": 1
-          },
-          {
-            "type": "number",
-            "name": "propertyId",
-            "label": "Property ID",
-            "default": 85
-          },
-          {
-            "type": "text",
-            "name": "label",
-            "label": "Bezeichnung",
-            "default": "Testger\u00e4t"
           }
         ]
       }
