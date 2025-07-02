@@ -1,0 +1,1 @@
+{"name": "iobroker.bacnet", "version": "0.0.1", "description": "BACnet communication for ioBroker with manual configuration", "author": {"name": "Michael Vollstedt"}, "main": "main.js", "license": "MIT", "dependencies": {"bacstack": "^0.2.1"}}
