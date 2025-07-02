@@ -3,18 +3,20 @@
     "name": "bacnet",
     "version": "0.0.1",
     "title": "BACnet Adapter",
-    "desc": "BACnet integration for ioBroker (Modbus UI)",
+    "desc": "BACnet integration f\u00fcr ioBroker im Modbus-Stil",
     "platform": "Javascript/Node.js",
     "mode": "daemon",
     "icon": "bacnet.png",
     "keywords": [
       "BACnet",
-      "HVAC",
-      "building"
+      "Automation"
     ],
     "adminUI": {
       "config": "html"
     }
+  },
+  "admin": {
+    "type": "html"
   },
   "native": {
     "devices": []
