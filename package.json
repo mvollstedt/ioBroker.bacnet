@@ -1,14 +1,7 @@
 {
   "name": "iobroker.bacnet",
   "version": "0.0.1",
-  "description": "BACnet Adapter for ioBroker with Modbus-style Admin UI",
   "main": "main.js",
-  "keywords": [
-    "ioBroker",
-    "BACnet"
-  ],
-  "author": "Michael Vollstedt",
-  "license": "MIT",
   "dependencies": {
     "@iobroker/adapter-core": "^4.0.0"
   }
