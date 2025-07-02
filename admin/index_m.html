@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head><meta charset="utf-8"><title>BACnet Admin</title></head>
+<head>
+  <meta charset="utf-8">
+  <title>BACnet Admin</title>
+</head>
 <body>
-<script>
+  <div id="config" class="m" style="padding: 10px"></div>
+
+  <script>
     systemDictionary = {};
-</script>
-<script type="text/javascript" src="../../lib/js/require.js"></script>
-<script type="text/javascript">
+  </script>
+  <script type="text/javascript" src="../../lib/js/require.js"></script>
+  <script type="text/javascript">
     require.config({
-        paths: { jsonConfig: '../../lib/js/jsonConfig' }
+      paths: {
+        jsonConfig: '../../lib/js/jsonConfig'
+      }
     });
     require(['jsonConfig'], function (jsonConfig) {
-        jsonConfig.load(null, null, {config: true});
+      jsonConfig.load(null, null, {config: true});
     });
-</script>
+  </script>
 </body>
 </html>
