@@ -23,7 +23,7 @@
     "devices": []
   },
   "admin": {
-    "type": "json",
+    "type": "html",
     "jsonConfig": true,
     "supportCustoms": false
   },
