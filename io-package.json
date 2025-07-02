@@ -12,7 +12,13 @@
       "Building",
       "Automation"
     ],
-    "license": "MIT"
+    "license": "MIT",
+    "authors": [
+      {
+        "name": "Michael Vollstedt",
+        "email": "mv@example.com"
+      }
+    ]
   },
   "native": {},
   "instanceObjects": [

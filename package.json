@@ -2,13 +2,8 @@
   "name": "iobroker.bacnet",
   "version": "0.0.1",
   "description": "BACnet Adapter for ioBroker",
-  "author": {
-    "name": "Michael Vollstedt"
-  },
+  "author": "Michael Vollstedt",
   "main": "main.js",
-  "scripts": {
-    "test": "echo \"No test specified\" && exit 0"
-  },
   "license": "MIT",
   "dependencies": {
     "@iobroker/adapter-core": "^3.0.4"

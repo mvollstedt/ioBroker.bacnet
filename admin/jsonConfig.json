@@ -1,14 +1,14 @@
 {
   "type": "panel",
-  "label": "BACnet Geräte",
+  "label": "BACnet Ger\u00e4te",
   "items": [
     {
       "type": "array",
       "name": "devices",
-      "label": "Manuelle Geräte",
+      "label": "Manuelle Ger\u00e4te",
       "item": {
         "type": "group",
-        "label": "Gerät",
+        "label": "Ger\u00e4t",
         "items": [
           {
             "type": "number",
@@ -38,7 +38,7 @@
             "type": "text",
             "name": "label",
             "label": "Bezeichnung",
-            "default": "Testgerät"
+            "default": "Testger\u00e4t"
           }
         ]
       }
