@@ -19,7 +19,8 @@
       "Automation"
     ],
     "adminUI": {
-      "config": "html"
+      "config": "json",
+      "custom": "none"
     }
   },
   "native": {
