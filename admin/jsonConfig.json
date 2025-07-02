@@ -1,0 +1,40 @@
+{
+  "type": "panel",
+  "items": [
+    {
+      "type": "array",
+      "name": "devices",
+      "label": "Manuelle BACnet-Ger\u00e4te",
+      "item": {
+        "type": "group",
+        "items": [
+          {
+            "type": "number",
+            "name": "deviceId",
+            "label": "Device ID"
+          },
+          {
+            "type": "number",
+            "name": "objectType",
+            "label": "Object Type"
+          },
+          {
+            "type": "number",
+            "name": "instance",
+            "label": "Instance"
+          },
+          {
+            "type": "number",
+            "name": "propertyId",
+            "label": "Property ID"
+          },
+          {
+            "type": "text",
+            "name": "label",
+            "label": "Bezeichnung"
+          }
+        ]
+      }
+    }
+  ]
+}

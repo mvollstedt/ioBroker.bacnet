@@ -1,0 +1,38 @@
+{
+  "common": {
+    "name": "bacnet",
+    "version": "0.0.1",
+    "title": "BACnet Adapter",
+    "desc": "BACnet integration for ioBroker",
+    "icon": "bacnet.png",
+    "mode": "daemon",
+    "platform": "Javascript/Node.js",
+    "keywords": [
+      "BACnet",
+      "Building",
+      "Automation"
+    ],
+    "license": "MIT"
+  },
+  "native": {},
+  "instanceObjects": [
+    {
+      "_id": "info.connection",
+      "type": "state",
+      "common": {
+        "name": "Device connected",
+        "type": "boolean",
+        "role": "indicator.connected",
+        "read": true,
+        "write": false,
+        "def": false
+      },
+      "native": {}
+    }
+  ],
+  "admin": {
+    "type": "json",
+    "jsonConfig": true,
+    "supportCustoms": false
+  }
+}
