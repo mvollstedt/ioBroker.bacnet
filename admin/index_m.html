@@ -11,15 +11,15 @@
     systemDictionary = {};
   </script>
   <script type="text/javascript" src="../../lib/js/require.js"></script>
-  <script type="text/javascript">
-    require.config({
-      paths: {
-        jsonConfig: '../../lib/js/jsonConfig'
-      }
-    });
-    require(['jsonConfig'], function (jsonConfig) {
-      jsonConfig.load(null, null, {config: true});
-    });
-  </script>
+<script type="text/javascript">
+  require.config({
+    paths: {
+      jsonConfig: '../../lib/js/jsonConfig'
+    }
+  });
+  require(['jsonConfig'], function (jsonConfig) {
+    jsonConfig.load(null, null, {config: true});
+  });
+</script>
 </body>
 </html>
