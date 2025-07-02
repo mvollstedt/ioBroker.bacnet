@@ -3,9 +3,14 @@
     "name": "bacnet",
     "version": "0.0.1",
     "title": "BACnet Adapter",
+    "desc": "BACnet Adapter with classic Admin UI",
     "platform": "Javascript/Node.js",
     "mode": "daemon",
     "icon": "bacnet.png",
+    "keywords": [
+      "BACnet",
+      "Automation"
+    ],
     "adminUI": {
       "config": "html"
     }
