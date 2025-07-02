@@ -1,37 +1,44 @@
 {
   "type": "panel",
+  "label": "BACnet Geräte",
   "items": [
     {
       "type": "array",
       "name": "devices",
-      "label": "Manuelle BACnet-Ger\u00e4te",
+      "label": "Manuelle Geräte",
       "item": {
         "type": "group",
+        "label": "Gerät",
         "items": [
           {
             "type": "number",
             "name": "deviceId",
-            "label": "Device ID"
+            "label": "Device ID",
+            "default": 1234
           },
           {
             "type": "number",
             "name": "objectType",
-            "label": "Object Type"
+            "label": "Object Type",
+            "default": 0
           },
           {
             "type": "number",
             "name": "instance",
-            "label": "Instance"
+            "label": "Instance",
+            "default": 1
           },
           {
             "type": "number",
             "name": "propertyId",
-            "label": "Property ID"
+            "label": "Property ID",
+            "default": 85
           },
           {
             "type": "text",
             "name": "label",
-            "label": "Bezeichnung"
+            "label": "Bezeichnung",
+            "default": "Testgerät"
           }
         ]
       }
