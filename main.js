@@ -1,53 +1,39 @@
 'use strict';
 const utils = require('@iobroker/adapter-core');
-
-class Bacnet extends utils.Adapter {
-    constructor(options = {}) {
-        super({
-            ...options,
-            name: 'bacnet',
-        });
+class BacnetAdapter extends utils.Adapter {
+    constructor(options) {
+        super({ ...options, name: 'bacnet' });
+        this.on('ready', this.onReady.bind(this));
     }
 
     async onReady() {
-        await this.setObjectNotExistsAsync('info.connection', {
-            type: 'state',
-            common: {
-                name: 'Device connected',
-                type: 'boolean',
-                role: 'indicator.connected',
-                read: true,
-                write: false,
-                def: false
-            },
-            native: {}
-        });
-        await this.setStateAsync('info.connection', false, true);
+        this.log.info('BACnet Adapter gestartet.');
 
-        if (Array.isArray(this.config.devices)) {
-            for (const dev of this.config.devices) {
-                const dpId = `device_${dev.deviceId}_${dev.objectType}_${dev.instance}_${dev.propertyId}`;
-                await this.setObjectNotExistsAsync(dpId, {
-                    type: 'state',
-                    common: {
-                        name: dev.label || dpId,
-                        type: 'mixed',
-                        role: 'value',
-                        read: true,
-                        write: false
-                    },
-                    native: dev
-                });
-                this.log.info(`[BACnet] Gerät aus Config erzeugt: ${dpId}`);
-            }
-        } else {
-            this.log.warn("[BACnet] Keine gültigen Geräte in Konfiguration gefunden.");
+        const devices = this.config.devices || [];
+        for (const device of devices) {
+            const id = `device_${device.deviceId}`;
+            await this.setObjectNotExistsAsync(id, {
+                type: 'channel',
+                common: { name: device.name || `Gerät ${device.deviceId}` },
+                native: device
+            });
+            await this.setObjectNotExistsAsync(`${id}.presentValue`, {
+                type: 'state',
+                common: {
+                    name: 'Present Value',
+                    type: 'number',
+                    role: 'value',
+                    read: true,
+                    write: false
+                },
+                native: {}
+            });
         }
     }
 }
 
-if (require.main === module) {
-    (() => new Bacnet())();
+if (module.parent) {
+    module.exports = (options) => new BacnetAdapter(options);
 } else {
-    module.exports = (options) => new Bacnet(options);
+    new BacnetAdapter();
 }

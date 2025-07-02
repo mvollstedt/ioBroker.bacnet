@@ -5,16 +5,34 @@
     {
       "type": "array",
       "name": "devices",
-      "label": "Manuelle Ger\u00e4te",
+      "label": "Manuell konfigurierte Ger\u00e4te",
       "item": {
         "type": "group",
-        "label": "Ger\u00e4t",
+        "label": "BACnet Ger\u00e4t",
         "items": [
           {
             "type": "number",
             "name": "deviceId",
             "label": "Device ID",
-            "default": 1234
+            "default": 1001
+          },
+          {
+            "type": "number",
+            "name": "objectType",
+            "label": "Objekt-Typ",
+            "default": 2
+          },
+          {
+            "type": "number",
+            "name": "instanceNumber",
+            "label": "Instanznummer",
+            "default": 1
+          },
+          {
+            "type": "text",
+            "name": "name",
+            "label": "Bezeichnung",
+            "default": "Testger\u00e4t"
           }
         ]
       }

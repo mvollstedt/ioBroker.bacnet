@@ -1,17 +1,31 @@
-"common": {
-  "name": "bacnet",
-  "version": "0.0.1",
-  "title": "BACnet Adapter",
-  "desc": "BACnet Adapter for ioBroker",
-  "platform": "Javascript/Node.js",
-  "mode": "daemon",
-  "icon": "bacnet.png",
-  "keywords": ["BACnet", "Building", "Automation"],
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "Michael Vollstedt",
-      "email": "mv@example.com"
-    }
-  ]
+{
+  "common": {
+    "name": "bacnet",
+    "version": "0.0.1",
+    "title": "BACnet Adapter",
+    "desc": "BACnet Adapter for ioBroker",
+    "platform": "Javascript/Node.js",
+    "mode": "daemon",
+    "icon": "bacnet.png",
+    "license": "MIT",
+    "authors": [
+      {
+        "name": "Michael Vollstedt"
+      }
+    ],
+    "keywords": [
+      "BACnet",
+      "Building",
+      "Automation"
+    ]
+  },
+  "native": {
+    "devices": []
+  },
+  "admin": {
+    "type": "json",
+    "jsonConfig": true,
+    "supportCustoms": false
+  },
+  "objects": []
 }
