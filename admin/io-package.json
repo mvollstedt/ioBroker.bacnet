@@ -1,0 +1,36 @@
+{
+  "common": {
+    "name": "bacnet",
+    "version": "0.0.1",
+    "title": "BACnet Adapter",
+    "desc": "BACnet Adapter for ioBroker",
+    "platform": "Javascript/Node.js",
+    "mode": "daemon",
+    "icon": "bacnet.png",
+    "license": "MIT",
+    "authors": [
+      {
+        "name": "Michael Vollstedt",
+        "email": "info@smart-yourself.de"
+      }
+    ],
+    "keywords": [
+      "BACnet",
+      "Automation"
+    ],
+    "adminUI": {
+      "config": "html"
+    }
+  },
+  "native": {
+    "devices": []
+  },
+  "admin": {
+    "type": "html",
+    "legacy": true,
+    "jsonConfig": true,
+    "supportCustoms": false
+  },
+  "objects": [],
+  "plugins": {}
+}
