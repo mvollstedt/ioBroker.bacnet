@@ -3,7 +3,7 @@
     "name": "bacnet",
     "version": "0.0.1",
     "title": "BACnet Adapter",
-    "desc": "BACnet integration for ioBroker (Modbus-Style Admin UI)",
+    "desc": "BACnet integration for ioBroker (Modbus UI)",
     "platform": "Javascript/Node.js",
     "mode": "daemon",
     "icon": "bacnet.png",

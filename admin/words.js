@@ -1,0 +1,2 @@
+/* localizable words */
+systemDictionary = {};
